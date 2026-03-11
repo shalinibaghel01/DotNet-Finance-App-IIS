@@ -37,3 +37,7 @@ jobs:
       with:
         name: dotnet-app
         path: publish
+
+    - name: Deploy to IIS Server
+      run: |
+       Copy-Item -Path publish\* -Destination \\SERVER-IP\C$\inetpub\Finance_App -Recurse -Force
