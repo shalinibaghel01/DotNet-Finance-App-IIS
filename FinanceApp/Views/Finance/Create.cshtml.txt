@@ -1,0 +1,22 @@
+@model FinanceApp.Models.Transaction
+
+<h2>Add Transaction</h2>
+
+<form method="post">
+    <label>Type</label>
+    <input asp-for="Type" placeholder="Income or Expense" />
+
+    <br/>
+
+    <label>Category</label>
+    <input asp-for="Category" />
+
+    <br/>
+
+    <label>Amount</label>
+    <input asp-for="Amount" />
+
+    <br/>
+
+    <button type="submit">Save</button>
+</form>
