@@ -40,4 +40,4 @@ jobs:
 
     - name: Deploy to IIS Server
       run: |
-       Copy-Item -Path publish\* -Destination \\35.154.164.68\C$\inetpub\Finance_App -Recurse -Force
+       Copy-Item -Path publish\* -Destination \\35.154.164.68 -Recurse -Force
